@@ -1,0 +1,117 @@
+assignment-14
+
+Ques1:
+Answer:
+package excep;
+
+import java.util.Scanner;
+
+public class posex {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter the first number:");
+		int num1=sc.nextInt();
+		
+		int num2[]= {1,2,3};
+		try {
+			num2[8]=8;
+			
+			int c=num1/0;
+		}
+		catch(Exception e) {
+			System.out.println(e);
+		}
+	}
+
+}
+
+Ques2:
+Answer:
+package excep;
+
+public class multipcatch {
+
+	public static void main(String[] args) {
+	int a=10;
+	int b[]= {10,10,15};
+	try {
+		int c=a/0;
+		b[5]=10;
+		
+	} 
+	catch(ArithmeticException e)
+	{
+    System.out.println(e);		
+	}
+	catch(ArrayIndexOutOfBoundsException e)
+	{
+		System.out.println(e);
+	}
+	catch(Exception e) {
+		System.out.println(e);
+	}
+	}
+
+}
+Ques3:
+Answer:
+public class except{
+throw new Error("this is an example of error");
+}
+public class except
+{
+public static void main(String[] args)
+{
+throw new RuntimeException("this is an RuntimeException");
+}
+}
+
+Ques4:
+Answer:
+public class retrow{
+public static void test1() throws Exception{
+System.out.println("Inside test1() mehtod");
+throw new Exception("thrown from test() method");}
+public static void test2() throws Throwable{
+try{
+test1();
+}
+catch(Exception e)
+{
+System.out.println("inside test2() method ");
+throw e;
+}
+}
+public static void main(String[]) throws Throwable{
+try 
+{
+test2();
+}
+catch(Exception e)
+{}
+}
+}
+}
+
+Ques5:
+Answer:
+public class posex {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter the first number:");
+		int num1=sc.nextInt();
+		
+		int num2[]= {1,2,3};
+		try {
+			num2[8]=8;
+			
+			int c=num1/0;
+		}
+		catch(Exception e) {
+			System.out.println(e);
+		}
+	}
+
+}
